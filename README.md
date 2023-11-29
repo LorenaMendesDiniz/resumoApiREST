@@ -1,25 +1,39 @@
-# resumoApiREST
-Api REST e RESTFul
-A arquitetura de API REST (Representational State Transfer) é um estilo arquitetural comumente utilizado para projetar redes e serviços na web. Ela se baseia em princípios simples, como a utilização de recursos identificáveis e a manipulação desses recursos por meio de representações.
+# Api REST e RESTFul
 
-Diferenças entre REST e RESTFul
-RESTFul é uma extensão do conceito de API REST, e sua principal diferença reside na adição de práticas e convenções para tornar as APIs mais simples, padronizadas e eficientes. Uma API RESTFul segue padrões específicos, como a utilização de URIs (Uniform Resource Identifiers) amigáveis e a adoção de verbos HTTP para operações consistentes.
+A arquitetura de API REST (Representational State Transfer) é um estilo utilizado para projetar redes e serviços na web. Ela utiliza recursos identificáveis e a manipulação desses recursos por meio de representações. As APIs RESTful utilizam os princípios REST, porém com adendos. Ambos são abordagens para projetar e desenvolver interfaces de programação web que seguem os princípios do estilo arquitetural REST.
 
-HTTP verbs
-Os verbos HTTP são métodos que indicam a ação desejada para ser executada em um recurso identificado. Os principais verbos utilizados em uma API REST/RESTFul são:
+## Diferenças entre REST e RESTFul
 
-GET: Solicita a representação de um recurso.
-POST: Envia dados para serem processados para um recurso específico.
-PUT: Atualiza um recurso ou cria um recurso se ele não existir.
-DELETE: Remove um recurso.
-Além desses, existem outros verbos menos comuns, como PATCH, OPTIONS, HEAD, entre outros, cada um com sua função específica.
+As principais diferenças entre APIs REST e RESTful estão no nível de aderência aos princípios REST. Enquanto as APIs REST seguem os princípios básicos do REST, as APIs RESTful são uma implementação mais completa e estrita desses princípios. APIs RESTful usam critérios adicionais, como a interface uniforme, clientes sem estado e operações baseadas em recursos.
 
-HTTP Status Code
-Os códigos de status HTTP são indicadores numéricos retornados pelo servidor para informar o resultado da solicitação feita pelo cliente. Alguns códigos comuns incluem:
+## HTTP verbs
 
-200 OK: Indica que a solicitação foi bem-sucedida.
-201 Created: Indica que a solicitação resultou na criação de um novo recurso.
-400 Bad Request: Indica que a solicitação do cliente foi inválida.
-404 Not Found: Indica que o recurso solicitado não foi encontrado no servidor.
-500 Internal Server Error: Indica que ocorreu um erro no servidor.
-Lorena Mendes Diniz - 01528548
+Os verbos HTTP indicam a ação desejada para ser executada em um recurso identificado. Os principais verbos utilizados em uma API REST/RESTFul são:
+
+- **GET:** Solicita a representação de um recurso.
+- **POST:** Envia dados para serem processados para um recurso específico.
+- **PUT:** Atualiza um recurso ou cria um recurso se ele não existir.
+- **DELETE:** Remove um recurso.
+
+## HTTP Status Code
+
+Os códigos de status HTTP são indicadores numéricos retornados pelo servidor para informar o resultado da solicitação feita pelo cliente. São números que indicam se uma solicitação HTTP foi concluída com êxito ou não. Eles são divididos em 5 classes:
+
+- **1xx:** Respostas informativas
+- **2xx:** Respostas bem-sucedidas
+- **3xx:** Redirecionamentos
+- **4xx:** Erros do cliente
+- **5xx:** Erros do servidor
+
+Dentre essas classes, alguns dos exemplos mais comuns são:
+
+- **200 OK:** Indica que a solicitação foi bem-sucedida.
+- **201 Created:** Indica que a solicitação resultou na criação de um novo recurso.
+- **301 Moved Permanently:** Indica que o recurso foi permanentemente movido para uma nova localização. O cliente deve atualizar o URL para acessar o recurso no novo local.
+- **400 Bad Request:** Indica que a solicitação do cliente foi inválida.
+- **404 Not Found:** Indica que o recurso solicitado não foi encontrado no servidor.
+- **500 Internal Server Error:** Indica que ocorreu um erro no servidor.
+
+---
+
+**Autor do resumo:** Lorena Mendes Diniz - 01528548
